@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sasamahan ka sa qc</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto:wght@100;400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins&family=Roboto:wght@100;400&display=swap');
+      </style>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<style>
+  @font-face {
+    font-family: 'baron';
+    src: url(fonts/baron_neue/Baron\ Neue\ Bold.otf);
+}
+@font-face {
+    font-family: 'dm';
+    src: url(fonts/DM_Sans/static/DMSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url(fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+   
+  }
+  .title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color:black;
+    font-family: 'Poppins'
+    
+    
+    
+  }
+  body {
+    background: #f4f6fc;
+   
+    
+  }
+  
+  .outside-container {
+    width: 900px;
+    height: 520px;
+    margin-left: 165px;
+    margin-bottom: 100px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+  }
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin-right: 25px;
+  }
+  .right-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25px;
+  }
+  
+  .image {
+    width: 279px;
+    height: 209px;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    
+  }
+  .image:hover {
+    transform: scale(1.1);
+  }
+  
+  .overlay-text {
+    margin-top: -40px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    color: white;
+    font-size: 12px;
+    transform: translateY(-20px);
+    
+  }
+  .right-side-overlay-text { 
+    margin-top: -80px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    color: white;
+    font-size: 12px;
+    transform: translateY(-20px);
+    
+  }
+  .overlay-logo {
+    width: 15px;
+    height: 15px;
+    filter: brightness(0) invert(1);
+    
+    
+  }
+  
+  .logo {
+    width: 13px;
+    height: 13px;
+    
+  }
+  .logo-gallery {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    width: 150px;
+    height: 20px;
+    margin-left: 20px;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 5px;
+  }
+  .rightside-logo-gallery {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    width: 150px;
+    height: 20px;
+    margin-left: 20px;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 0px;
+    
+  }
+  .label-paragraph  {
+    font-size: 10px;
+    color: black;
+    display: block;
+    width: 300px;
+    margin-left: 20px;
+    transform: translateY(-30px);
+   
+    
+  }
+  .rightside-label-paragraph {
+    font-size: 10px;
+    color: black;
+    display: block;
+    width: 250px;
+    margin-left: 20px;
+    transform: translateY(-25px);
+    
+  }
+  
+  .up-image {
+    width: 280px;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    z-index: 100;
+  }
+  .up-image:hover,.overlay-logo a {
+    transform:scale(1.1);
+    z-index: -1;
+  
+    
+    
+    
+  }
+  #elliptical {
+    width: 300px;
+  }
+  #memorial-park {
+    margin-top: -97px;
+  }
+  #arts-island {
+    margin-top: -97px;
+  }
+  .sidebar-container {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 53px;
+    height: 750px;
+    background-color:#0804fc;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: all;
+    
+  }
+  .sidebar-container:hover{
+    transform: translateX(-50px, 50px);
+    opacity: 1;
+  }
+  .arrow {
+    width: 50px;
+    filter: brightness(0) invert(1);
+    transform: scaleX(-1);
+    
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .image-logo {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  
+</style>
+
+
+<div class="section2">
+  <div class="navigation">
+    <p class="title">Recommended Destination</p>
+  </div>
+  
+  <nav class="sidebar-container">
+   
+    <a href="index.html"><img class="arrow" src="icons/arrow.png" alt=""></a>
+  </nav>
+  <div class="outside-container">
+    <div class="left-container">
+       <a href="Contents/Smart Araneta Coliseum/Smart Araneta.html"><img class="up-image" src="images/Araneta_Coliseum_(Araneta_Center,_Cubao,_Quezon_City)(2017-08-13).jpg" alt=""></a>
+       <p class="overlay-text">
+          <img class="overlay-logo" src="images/location.png"> Smart Araneta Colloseum
+       </p>
+       
+      
+      <div class="down-pictures">
+        <div  class="logo-gallery">
+          <img class="logo" src="icons/drive.png">
+          <img class="logo" src="icons/picnic.png">
+          <img class="logo" src="icons/sneaker.png">
+          <img class="logo" src="icons/bicycle.png">
+        </div>
+        <a href="#"><p class="label-paragraph">General Roxas Avenue, Cubao, Quezon City</p></a>
+      </div>
+    </div>  
+    <div class="right-container"> 
+      <div class="container">
+        <a href="Contents/Shrine of Mary, Queen of Peace, Our Lady of EDSA Content/Shrine of Mary, Queen of Peace, Our Lady of EDSA.html"><img class="image" src="images/643_1865974939365318952.jpg" alt=""></a>
+        <div class="rightside-logo-gallery">
+          <img class="logo" src="icons/drive.png">
+          <img class="logo" src="icons/picnic.png">
+          <img class="logo" src="icons/sneaker.png">
+          <img class="logo" src="icons/bicycle.png">
+        </div>
+        <p class="rightside-label-paragraph">EDSA, Ortigas Ave, QC, 1110 Metro Manila</p>
+        <p class="right-side-overlay-text">
+          <img class="overlay-logo" src="images/location.png"> Shrine of Mary, Queen of Peace
+        </p>
+      </div>
+      <div class="container">
+        <a href="Contents/Minor Basilica of the National Shrine of Our Lady of Mount Carmel/Minor Basilica of the National Shrine of Our Lady of Mount Carmel.html"><img id="ninoy-aquino" class="image" src="images/00-1.jpg" alt=""></a>
+        <div class="rightside-logo-gallery">
+          <img class="logo" src="icons/drive.png">
+          <img class="logo" src="icons/picnic.png">
+          <img class="logo" src="icons/sneaker.png">
+          <img class="logo" src="icons/bicycle.png">
+        </div>
+        <p id="elliptical" class="rightside-label-paragraph">Metro Manila 90 4th Street, Quezon City</p>
+        <p class="right-side-overlay-text">
+          <img id="overlaylogo" class="overlay-logo" src="images/location.png"> Minor Basilica of the National... 
+        </p>
+      </div>
+      <div class="container">
+        <a href="Contents/SM City Of North EDSA/Sm City of North Edsa.html"><img class="image" src="images/00.615.5.374.-1920x1080.jpg" alt=""></a>
+        <div class="rightside-logo-gallery">
+          <img class="logo" src="icons/drive.png">
+          <img class="logo" src="icons/picnic.png">
+          <img class="logo" src="icons/sneaker.png">
+          <img class="logo" src="icons/bicycle.png">
+        </div>
+        <p class="rightside-label-paragraph"> North Avenue, corner EDSA, Quezon City</p>
+        <p id="memorial-park" class="right-side-overlay-text">
+          <img class="overlay-logo" src="images/location.png">SM City North Edsa
+        </p>
+      </div>
+      <div class="container">
+        <a href="Contents/SM Fairview/SM  Fairview.html"><img class="image" src="images/Fairview2_medium.jpg" alt=""></a>
+        <div class="rightside-logo-gallery">
+          <img class="logo" src="icons/drive.png">
+          <img class="logo" src="icons/picnic.png">
+          <img class="logo" src="icons/sneaker.png">
+          <img class="logo" src="icons/bicycle.png">
+        </div>
+        <p class="rightside-label-paragraph">Quirino Highway, Novaliches, Quezon City</p>
+        <p id="arts-island" class="right-side-overlay-text">
+          <img class="overlay-logo" src="images/location.png"> SM City Fairview
+        </p>
+      </div>
+    </div>
+  </div>
+</html>
