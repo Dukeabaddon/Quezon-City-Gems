@@ -292,9 +292,6 @@ button {
     display: flex;
     overflow: hidden;
     box-sizing: border-box;
-    scroll-snap-type: mandatory;
-    overflow-x: auto;
-    overflow-y: auto;
 }
 .circleContainer {
     width: fit-content;
