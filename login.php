@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $conn = mysqli_connect("localhost", "root", "", "auth");
+    $conn = mysqli_connect("localhost:3308", "root", "", "auth");
 
     if (!$conn) {
         die("Connection Failed: ". $con->connect_error);

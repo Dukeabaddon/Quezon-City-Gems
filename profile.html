@@ -3,10 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            height: 1cm;
+            background-color: #007bff;
+            color: #fff;
+            display: flex;
+            justify-content: space-between; /* Adjusted justify-content */
+            align-items: center;
+            padding: 0 20px; /* Added padding */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            gap: 5cm;
+            padding: 0px;
+        }
+
+        .sidebar {
+            width: 0px;
+            overflow: hidden;
+            background-color: #005088;
+			color:#fff
+            padding: 0px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+			justify-content: left-side;
+            transition: width 0.3s ease;
+        }
+
+        .sidebar:hover {
+            width: 275px;
+        }
+
+        .profile-picture-sidebar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10xpx;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-picture-sidebar:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.1);
+        }
+
+        section {
+            display: none;
+            padding: 0px;
+            border-bottom: 1px #ddd;
+            transition: opacity 0.3s ease;
+			
+        }
+        h2 {
+            color: #007bff;
+            font-size: 1.2em;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation-buttons {
+            text-align: center;
+            margin-top: 20px;
+    </style>
 </head>
 <body>
-    <h1>SUCCESSFUL</h1>
-    
+
+    <header>
+        <button onclick="toggleSidebar()">Menu</button>
+        <h1>HALO</h1>
+    </header>
+
+    <div class="content">
+        <div class="sidebar">
+            <img src="https://dummyimage.com/" alt="Profile Picture" class="profile-picture-sidebar">
+            <p>John Doe</p>
+            <ul>
+		
+            <p><a href="#" onclick="showSection('personal-info')" style="color:white;">Personal Information</a></p>
+            <p><a href="#" onclick="showSection('security-privacy')" style="color:white;">Security and Privacy</a></p>
+            <p><a href="#" onclick="showSection('personalization')" style="color:white;">Personalization</a></p>
+            <p><a href="#" onclick="showSection('about')" style="color:white;">About</a></p>
+            <p><a href="#" onclick="showSection('help')" style="color:white;">Help</a></p>
+            <p><a href="#" onclick="logout()" style="color:white;">Logout</a></p>
+
+		
+            </ul>
+        </div>
+
+      <div class="profile-card">
+			  <div class="profile-header">
+                <h2>User Profile</h2>
+            </div>
+
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-picture">
+			  
+			<section id="personal-info">
+                <h2>Personal Information</h2>
+                <label for="email">Email:</label>
+                <p>john.doe@example.com</p>
+
+                <label for="dob">Date of Birth:</label>
+                <p>January 1, 1990</p>
+            </section>
+
+            <section id="security-privacy">
+                <h2>Security and Privacy</h2>
+                <label for="username">Username:</label>
+                <p>johndoe123</p>
+
+                <label for="password">Password:</label>
+                <p>Password Hidden</p>
+            </section>
+
+            <section id="personalization">
+                <h2>Personalization</h2>
+            </section>
+
+            <section id="about">
+                <h2>About</h2>
+                <p>This is a brief description about the user.</p>
+            </section>
+
+            <section id="help">
+                <h2>Help</h2>
+                <p>If you need assistance, please contact our support team.</p>
+            </section>
+
+            <section id="logout">
+                <button onclick="logout()">Logout</button>
+            </section>
+        </div>
+    </div>
+
+            <!-- Other sections... -->
+
+            <section id="logout">
+                <button onclick="logout()">Logout</button>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.style.width = sidebar.style.width === '0px' ? '225px' : '0';
+        }
+
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.profile-card section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        function logout() {
+            window.location.href = 'trial.html';
+        }
+    </script>
+
 </body>
 </html>

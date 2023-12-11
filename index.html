@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -42,21 +42,21 @@
             to a modern touch of an urban metropolis</p>
             <button class="explore"><a href="#contentss">Explore</a></button>
         </div>
-    </div>
+      </div>
     <div class="section2" id="contentss">
       <div class="navigation">
-        <p class="title">Recommended Destination</p>
+        <p class="title" id="hidden">Recommended Destination</p>
       </div>   
       <nav class="sidebar-container">
         <a href="2ndpage.html"><img class="arrow" src="icons/arrow.png" alt=""></a>
       </nav>
-      <div class="outside-container">
+      <div class="outside-container" id="hidden">
         <div class="left-container">
            <a href="Contents/U.P. Diliman Content/U.P. Diliman Content.html"><img class="up-image" src="images/up.jpeg.jpg" alt=""></a>
            <p class="overlay-text">
               <img class="overlay-logo" src="images/location.png"> U.P. Diliman
            </p>
-          <div class="down-pictures">
+          <div class="down-pictures" id="hidden">
             <div  class="logo-gallery">
               <img class="logo" src="icons/drive.png">
               <img class="logo" src="icons/picnic.png">
@@ -66,7 +66,7 @@
             <a href="#"><p class="label-paragraph">Roxas Ave, Diliman, Quezon City, Metro Manila</p></a>
           </div>
         </div>  
-        <div class="right-container"> 
+        <div class="right-container" id="hidden"> 
           <div class="container">
             <a href="Contents/La Mesa Eco Park Content/La Mesa Eco Park Content.html"><img class="image" src="images/ecopark.jpeg.jpg" alt=""></a>
             <div class="rightside-logo-gallery">
@@ -133,7 +133,7 @@
         </div>
         <div class="skewContainer">
             <div class="skew">
-                <img src="images/about_image.png" id="aboutImage"> 
+                <img src="images/about_image.png" id="aboutImage" class="hidden"> 
             </div>
         </div>
     </div>
@@ -142,7 +142,7 @@
             <div class="circle"><img src="images/customerService.png" alt="Customer Sevice"></div>
         </div>
         <div class="someForm">
-            <div class="intro"><img src="images/logo.png">Welcome</div>
+            <div class="intro"><img src="images/qcgems.jpg" id="logointro">Welcome</div>
             <div class="containerbtn">
                 <button type="button" onclick="left()" class="loginbtn">Login</button>
                 <button type="button" onclick="right()" class="signupbtn">Signup</button>
@@ -153,21 +153,42 @@
                     <input type="password" placeholder="Password" class="password" name="password">
                     <button class="loginsubmit">Login</button>
                 </form>
-                <form id="signup1" class="signup">
-                    <input type="email" placeholder="Email" class="email">
-                    <input type="password" placeholder="Password" class="password">
-                    <input type="password" placeholder="Confirm Password" class="passwordTwo">
-                    <button class="signupsubmit">Signup</button>
+                <form id="signup1" class="signup" action="register.php" method="post">
+                    <input type="email" placeholder="Email" class="email" name="email">
+                    <input type="date" placeholder="Birthday" class="birthday" name="birthday">
+                    <select name="gender" id="gender" name="gender">
+                      <option value="" disabled selected>Gender</option>
+                      <option value="gender">Male</option>
+                      <option value="gender">Female</option>
+                      <option value="gender">Others</option>
+                    </select>
+                    <input type="password" placeholder="Password" class="password" name="password">
+                    <input type="password" placeholder="Confirm Password" class="passwordTwo" name="password2">
+                    <button class="signupsubmit" name="signup" value="signup">Signup</button>
                 </form>
             </div>
             </div>
-<div class="footer">
-  <footer>
-    <p class="email-us">email-us</p>
-    <br>
-    <br>
-  </footer>
-</div>
+            <div class="footer">
+              <footer>
+                  <div class="footer-info">
+                    <h3 class="headFooter">About Us</h3>
+                    <p>Halo, Be where you want, Anytime</p>
+                  </div>
+                  <div class="footer-contact">
+                    <h3 class="headFooter">Contact Us</h3>
+                    <p>Email: aaronmecate182@gmail.com</p>
+                    <p>Phone: +639763008041</p>
+                  </div>
+                  <div class="footer-links">
+                    <h3 class="headFooter">Quick Links</h3>
+                    <ul>
+                      <li><a href="#homepage">Home</a></li>
+                      <li><a href="#contentss">Destinations</a></li>
+                      <li><a href="#aboutus">About Us</a></li>
+                    </ul>
+                  </div>
+               </footer>
+          </div>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
