@@ -26,7 +26,9 @@ p {
   
   
 }
-
+p {
+  font-size: 16px;
+}
 strong {
   font-size: 20px;
   font-weight: 700;
